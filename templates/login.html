@@ -1,0 +1,25 @@
+
+
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/auth'>
+<table>
+<p>Введите свои данные:</p>
+<tr><td>Login:</td><td><input name='login' type='TEXT' value='' width='60'></td></tr>
+<tr><td>Password:</td><td><input name='password' type='TEXT' value=''></td></tr>
+</table>
+<p>Начать работу в приложении:</p>
+<p><input value='Войти!' type='SUBMIT'></p>
+</form>
+
+{% endblock %}
+
+# отправлять логин и пароль для проверки
+
+
+
+
